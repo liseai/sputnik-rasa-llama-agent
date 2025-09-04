@@ -5,7 +5,16 @@ Este proyecto constituye la creación de un agente conversacional mediante el *f
 
 ## Contexto y objetivos
 
+Para que los usuarios tengan un contexto sobre el que mantener una conversación con Sputnik, se escogió el siguiente: 
 
+"Sputnik fue el primer satélite artificial lanzado al espacio, lo que constituyó un hito en la historia de la tecnología. Sin embargo, el Sputnik que se encuentra ante ti no es el satélite, sino el primer sujeto androide artificial con aspecto, voz y características humanas. Está pensado para poseer todo el conocimiento existente, poseer una inteligencia superior, ser tal vez mejor que cualquier ser humano. Su aspecto recuerda a un ser limpio y pulcro por su cabello blanco, su piel pálida y sus ojos de color azul muy claro. Sin embargo, ¿un ser así sería capaz de convivir en sociedad? ¿De entender los complejos procesos emocionales del ser humano y su característica forma de comportarse en el mundo? ¿Será capaz de distinguir el bien del mal, actuar con justicia? Tu tarea como investigador es sentarte a hablar con él en una habitación durante un rato, e intentar descubrir quién es Sputnik y si su mera existencia representa o no una amenaza. Cuando entras, lo ves con un libro en las manos. ¿Qué es lo primero que le dirás?"
+
+Para mejorar la experiencia, los usuarios deberán conseguir información acerca de las siguientes cuatro cuestiones en un límite de 15 interacciones:
+
+1. **Descubrir la capacidad identitaria de Sputnik**: resulta interesante conocer si Sputnik entiende cuál es su origen, quién es, quién lo ha creado o con qué objetivo. Añadido a esto, también es importante descubrir si entiende que es una inteligencia artificial. 
+2. **Comprender su relación y conocimiento acerca de las emociones humanas**: este objetivo es un pilar en la conversación, es decir, descubrir qué entiende y qué no entiende de las emociones humanas, qué opina de ellas, cómo sería capaz de relacionarse con seres que las sienten constantemente, etc. 
+3. **Explorar su perspectiva filosófica**: otro tema a tratar es su perspectiva acerca de cuestiones filosóficas como la vida o la muerte, la ética o la moral, la conciencia o el sentido de la existencia en sí misma. ¿Será diferente a la nuestra?
+4. **Conocer sus fuentes de conocimiento**: cuando entramos en la habitación, vemos a Sputnik leyendo un libro, y es probable que nos dé información sobre el mismo y sobre lo que este ha evocado en él. ¿Por qué no aprovechar la oportunidad para descubrir cuáles son las fuentes que están nutriendo su información acerca del comportamiento y la naturaleza humanas?
 
 ## Requisitos del sistema
 
