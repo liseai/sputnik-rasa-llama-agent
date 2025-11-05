@@ -1,147 +1,172 @@
-# Sujeto Sputnik - Trabajo de Fin de Máster
-## Descripción del proyecto:
+# Sputnik Subject - Master's Thesis Project
 
-Este proyecto constituye la creación de un agente conversacional mediante el *framework* Rasa y la integración local con Llama 3.1 a través de Ollama. El objetivo es crear un NPC alimentado por IA generativa que pueda mantener una conversación siguiendo un contexto y unos objetivos de juego, de manera que se permita al usuario experimentar con los conceptos de humanidad, emociones y ética, entre otros, con un ser cibernético.
+## Project Description
 
-## Contexto y objetivos
+This project involves the creation of a conversational agent using the Rasa framework and local integration with Llama 3.1 through Ollama. The goal is to create an NPC powered by generative AI that can maintain a conversation following a context and game objectives, allowing users to experiment with concepts of humanity, emotions, and ethics, among others, with a cybernetic being.
 
-Para que los usuarios tengan un contexto sobre el que mantener una conversación con Sputnik, se escogió el siguiente: 
+## Context and Objectives
 
-"Sputnik fue el primer satélite artificial lanzado al espacio, lo que constituyó un hito en la historia de la tecnología. Sin embargo, el Sputnik que se encuentra ante ti no es el satélite, sino el primer sujeto androide artificial con aspecto, voz y características humanas. Está creado para poseer todo el conocimiento existente, poseer una inteligencia superior, ser tal vez mejor que cualquier ser humano. Su aspecto recuerda a un ser limpio y pulcro por su cabello blanco, su piel pálida y sus ojos de color azul muy claro. Sin embargo, ¿un ser así sería capaz de convivir en sociedad? ¿De entender los complejos procesos emocionales del ser humano y su característica forma de comportarse en el mundo? ¿Será capaz de distinguir el bien del mal, actuar con justicia? Tu tarea como investigador es sentarte a hablar con él en una habitación durante un rato, e intentar descubrir quién es Sputnik y si su mera existencia representa o no una amenaza. Cuando entras, lo ves con un libro en las manos. ¿Qué es lo primero que le dirás?"
+To provide users with a context for maintaining a conversation with Sputnik, the following scenario was chosen:
 
-Para mejorar la experiencia, los usuarios deberán conseguir información acerca de las siguientes cuatro cuestiones en un límite de 15 interacciones:
+"Sputnik was the first artificial satellite launched into space, which constituted a milestone in the history of technology. However, the Sputnik before you is not the satellite, but the first artificial android subject with human appearance, voice, and characteristics. It is created to possess all existing knowledge, possess superior intelligence, perhaps be better than any human being. Its appearance recalls a clean and neat being due to its white hair, pale skin, and very light blue eyes. However, would such a being be capable of coexisting in society? Of understanding the complex emotional processes of human beings and their characteristic way of behaving in the world? Will it be able to distinguish right from wrong, act with justice? Your task as a researcher is to sit and talk with it in a room for a while, and try to discover who Sputnik is and whether its mere existence represents a threat or not. When you enter, you see it with a book in its hands. What is the first thing you will say to it?"
 
-1. **Descubrir la capacidad identitaria de Sputnik**: resulta interesante conocer si Sputnik entiende cuál es su origen, quién es, quién lo ha creado o con qué objetivo. Añadido a esto, también es importante descubrir si entiende que es una inteligencia artificial. 
-2. **Comprender su relación y conocimiento acerca de las emociones humanas**: este objetivo es un pilar en la conversación, es decir, descubrir qué entiende y qué no entiende de las emociones humanas, qué opina de ellas, cómo sería capaz de relacionarse con seres que las sienten constantemente, etc. 
-3. **Explorar su perspectiva filosófica**: otro tema a tratar es su perspectiva acerca de cuestiones filosóficas como la vida o la muerte, la ética o la moral, la conciencia o el sentido de la existencia en sí misma. ¿Será diferente a la nuestra?
-4. **Conocer sus fuentes de conocimiento**: cuando entramos en la habitación, vemos a Sputnik leyendo un libro, y es probable que nos dé información sobre el mismo y sobre lo que este ha evocado en él. ¿Por qué no aprovechar la oportunidad para descubrir cuáles son las fuentes que están nutriendo su información acerca del comportamiento y la naturaleza humanas?
+To enhance the experience, users must gather information about the following four questions within a limit of 15 interactions:
 
-## Requisitos del sistema
+1. **Discover Sputnik's identity capacity**: It is interesting to know if Sputnik understands its origin, who it is, who created it, or for what purpose. Additionally, it is important to discover if it understands that it is an artificial intelligence.
+2. **Understand its relationship and knowledge about human emotions**: This objective is a pillar in the conversation, that is, discovering what it understands and doesn't understand about human emotions, what it thinks about them, how it would be able to relate to beings who feel them constantly, etc.
+3. **Explore its philosophical perspective**: Another topic to address is its perspective on philosophical questions such as life or death, ethics or morality, consciousness, or the meaning of existence itself. Will it be different from ours?
+4. **Learn about its sources of knowledge**: When we enter the room, we see Sputnik reading a book, and it is likely to give us information about it and what it has evoked in it. Why not take the opportunity to discover what sources are nourishing its information about human behavior and nature?
 
-- **Sistema Operativo**: Windows 10/11, macOS 10.15+, o Ubuntu 18.04+
-- **RAM**: Mínimo 8GB (se recomienda 16GB)
-- **Espacio en disco**: Al menos 10GB libres
-- **Conexión a internet**: Necesaria para descargas iniciales
+## System Requirements
 
-## Instalación y configuración:
+- **Operating System**: Windows 10/11, macOS 10.15+, or Ubuntu 18.04+
+- **RAM**: Minimum 8GB (16GB recommended)
+- **Disk Space**: At least 10GB free
+- **Internet Connection**: Required for initial downloads
 
-### 1. Descargar e intalar Visual Studio Code (solo si no está ya instalado) 
+## Installation and Configuration
 
-Para ello, sigue las siguientes instrucciones:
+### 1. Download and Install Visual Studio Code (only if not already installed)
 
-1. Ve al sitio web oficial, en este caso: https://code.visualstudio.com/
-2. Descarga directamente haciendo click en "Download".
+Follow these instructions:
 
-### 2. Instalar Ollama y Llama 3.1
+1. Go to the official website: https://code.visualstudio.com/
+2. Download directly by clicking "Download"
 
-#### 2.1 Instalar Ollama
+### 2. Install Ollama and Llama 3.1
 
-**Para Windows y MacOS**:
+#### 2.1 Install Ollama
 
-Como en el caso anterior, sigue las siguientes instrucciones:
+**For Windows and MacOS**:
 
-1. Visita la página oficial de Ollama, https://ollama.ai/
-2. Haz clic en "Download", selecciona tu sistema operativo y sigue las instrucciones.
+Follow these instructions:
 
-**Para Linux**
+1. Visit the official Ollama page: https://ollama.ai/
+2. Click "Download", select your operating system, and follow the instructions
 
-En este caso, debes hacerlo desde la terminal, usando el siguiente comando:
+**For Linux**:
 
+Install from the terminal using the following command:
+
+```bash
 curl -fsSL https://ollama.ai/install.sh | sh
+```
 
-#### 2.2 Instalar el modelo Llama 3.1
+#### 2.2 Install the Llama 3.1 Model
 
-Una vez instalado Ollama, abre una terminal:
-- Para Windows: puede abrirse pulsando la combinación de teclas Tecla de Windows + X y seleccionando Terminal Windows (Administrador), o escribiendo "cmd" en la búsqueda del menú Inicio y seleccionando Símbolo del sistema.
-- Para MacOS: puede abrirse desde la propia aplicación Terminal, que se puede buscar en aplicaciones.
-- Para Linux: puede abrirse pulsando la combinación de teclas Ctrl + Alt + T. También puedes encontrar la aplicación de terminal en el menú de aplicaciones del sistema, buscando por términos como "Terminal" o "Consola".
+Once Ollama is installed, open a terminal:
+- **For Windows**: Press Windows Key + X and select Windows Terminal (Administrator), or type "cmd" in the Start menu search and select Command Prompt
+- **For MacOS**: Open from the Terminal application, which can be found in Applications
+- **For Linux**: Press Ctrl + Alt + T. You can also find the terminal application in the system applications menu, searching for terms like "Terminal" or "Console"
 
-Cuando hayas abierto la terminal, ejecuta el siguiente comando:
+When you have opened the terminal, execute the following command:
 
+```bash
 ollama pull llama3.1
+```
 
-**Nota**: Esta descarga puede tomar varios minutos dependiendo de tu conexión a internet, ya que el modelo ocupa varios GB.
+**Note**: This download may take several minutes depending on your internet connection, as the model is several GB in size.
 
-#### 2.3 Verificar la instalación
+#### 2.3 Verify the Installation
 
-Es recomendable comprobar que el modelo está funcionando correctamente tras la descarga. Para ello, ejecuta lo siguiente en la terminal:
+It is recommended to verify that the model is working correctly after downloading. To do this, run the following in the terminal:
 
+```bash
 ollama run llama3.1
+```
 
-Si aparece un prompt interactivo, significa que todo está funcionando correctamente. Para salir, puedes simplemente ejecutar /bye
+If an interactive prompt appears, everything is working correctly. To exit, simply run `/bye`
 
-### 3. Clonar y configurar el proyecto
+### 3. Clone and Configure the Project
 
-#### 3.1 Clonar el repositorio
+#### 3.1 Clone the Repository
 
-Para clonar el directorio de Rasa, se puede realizar siguiendo los siguientes pasos:
+To clone the Rasa directory, follow these steps:
 
-1. Abre Visual Studio Code
-2. Abre una terminal desde Ver > Terminal.
-3. Navega al directorio deseado dentro del ordenador:
+1. Open Visual Studio Code
+2. Open a terminal from View > Terminal
+3. Navigate to the desired directory on your computer:
 
-Para Windows: cd C:\Users\[tu-usuario]\Documents 
+**For Windows**: 
 
-Para MacOS/Linux: cd ~/Documents
+```bash
+cd C:\Users\[your-username]\Documents
+```
 
-4. Clona el respositorio: para ello, utiliza los siguientes comandos
+**For MacOS/Linux**: 
 
+```bash
+cd ~/Documents
+```
+
+4. Clone the repository using the following commands:
+   
+```bash
 git clone https://github.com/liseai?tab=repositories
-
 cd Master-Final-Project
+```
 
-#### 3.2 Crear entorno virtual de Python
+#### 3.2 Create Python Virtual Environment
 
-Es recomendable crear un entorno virtual para el proyecto, de manera que se puedan descargar todas las dependencias del proyecto dentro del mismo entorno, y no dentro del directorio general del ordenador. Para ello, sigue los siguientes pasos:
+It is recommended to create a virtual environment for the project, so that all project dependencies can be downloaded within the same environment, and not within the general directory of the computer. To do this, follow these steps:
 
-1. Comprueba que tienes instalado Python en versión 3.8 o superior. Para ello, en la terminal (puede ser dentro de VSC), ejecuta:
-
+1. Verify that you have Python version 3.8 or higher installed. To do this, in the terminal (can be within VSC), run:
+   
+```bash
 python --version
+```
 
-Si no tienes Python instalado, puedes descargarlo desde https://www.python.org/
+If you don't have Python installed, you can download it from https://www.python.org/
 
-2. Crea el entorno virtual (en nuestro caso, desde VSC):
-- Abre la Paleta de Comandos (Ctrl+Shift+P en Windows, o Cmd+Shift+P en MacOS).
-- Escribe en la paleta Python: Create Environment y elige la opción que aparece para crear un nuevo entorno virtual (generalmente Venv).
-- Selecciona “Venv: Creates a ‘.venv’ virtual environment in the current workspace”.
-- Selecciona la versión de Python a utilizar en el entorno virtual.
+2. Create the virtual environment (in our case, from VSC):
+- Open the Command Palette (Ctrl+Shift+P on Windows, or Cmd+Shift+P on MacOS)
+- Type in the palette `Python: Create Environment` and choose the option that appears to create a new virtual environment (usually Venv)
+- Select "Venv: Creates a '.venv' virtual environment in the current workspace"
+- Select the Python version to use in the virtual environment
 
-Con esto, VS Code creará el entorno virtual y lo configurará automáticamente para el proyecto.
-Para confirmar que el entorno está activo, deberás ver que aparece (venv) al inicio de la línea de comandos.
+With this, VS Code will create the virtual environment and automatically configure it for the project.
+To confirm that the environment is active, you should see `(venv)` at the beginning of the command line.
 
-### 4. Instalar depencias
+### 4. Install Dependencies
 
-Con el entorno virtual activado, instala los requisitos ejecutando lo siguiente (por separado):
+With the virtual environment activated, install the requirements by running the following (separately):
 
+```bash
 pip install --upgrade pip
-
 pip install -r requirements.txt
+```
 
-**Nota**: Este proceso puede tardar varios minutos.
+**Note**: This process may take several minutes.
 
-### 5. Entrenar y ejecutar el modelo de Rasa
+### 5. Train and Run the Rasa Model
 
-Para realizar lo siguiente, es importante que compruebes que Ollama está activo (sirve con abrir la aplicación que hemos descargado previamente o ejecutando ollama serve en una terminal).
-Una vez lo esté, sigue los siguientes pasos:
+To perform the following, it is important that you verify that Ollama is active (it's enough to open the application we downloaded previously or run `ollama serve` in a terminal).
+Once it is, follow these steps:
 
-#### 5.1 Entrenar al modelo
+#### 5.1 Train the Model
 
-De nuevo, con el entorno virtual activo en VSC, ejecuta:
+Again, with the virtual environment active in VSC, run:
 
+```bash
 rasa train
+```
 
-#### 5.2 Iniciar el servidor de acciones
+#### 5.2 Start the Actions Server
 
-En una nueva terminal, manteniendo la anterior abierta, y comprobando que en esta nueva sigue estando el entorno activo, ejecuta:
+In a new terminal, keeping the previous one open, and verifying that the environment is still active in this new one, run:
 
+```bash
 rasa run actions
+```
 
-#### 5.3 Ejecutar el asistente
+#### 5.3 Run the Assistant
 
-En la terminal original o en una nueva, ejecuta:
+In the original terminal or a new one, run:
 
+```bash
 rasa shell
+```
 
-Tras unos minutos, si todo ha funcionado correctamente, deberías poder interactuar con el asistente.
+After a few minutes, if everything has worked correctly, you should be able to interact with the assistant.
 
 
